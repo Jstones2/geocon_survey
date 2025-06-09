@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS & Mapping</title>
+    <link rel="icon" href="geocon_favicon.jpg">
+    <link rel="stylesheet" href="gis_mapping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+       <header>
+    <div class="menu-toggle" onclick="toggleMenu()" style="z-index: 1000; color: blue;">
+      <i class="fas fa-bars" id="menuIcon" style="color: blue; "></i>
+    </div>
+    <div class="logo">
+      <img src="geogon_logo.jpg" alt="Geocon Logo">
+    </div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="/services.html">Services  <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li class="has-dropdown">
+              <a href="#">Consultancy <i class="fas fa-chevron-left"></i></a>
+              <ul >
+                <li><a href="#">Engineering Consultancy</a></li>
+                <li><a href="#">Research Policy</a></li>
+                <li><a href="#">Environmental & Social Impact</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#">Survey <i class="fas fa-chevron-left"></i></a>
+              <ul>
+                <li><a href="/engineering_survey.html">Engineering Survey</a></li>
+                <li><a href="/land_survey.html">Land Survey</a></li>
+              </ul>
+            </li>
+            <li><a href="#">GIS and Mapping</a></li>
+            <li><a href="#">Physical Planning</a></li>
+          </ul>
+        </li>
+        <li  class="has-dropdown">
+          <a href="#">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul  class="dropdown">
+            <li><a href="#">Cadastral Planning</a></li>
+            <li><a href="#">Physical Planning</a></li>
+            <li><a href="#">GIS and Mapping</a></li>
+            <li><a href="#">Environmental & <br> Social Impact Assessment</a></li>
+            <li><a href="#">Other Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section class="about-hero">
+        <h2>GIS And Mapping</h2>
+    </section>
+
+
+     <!--FOOTER SECTION-->
+  <footer class="custom-footer">
+  <div class="footer-wrapper">
+    <!-- Our Success Story -->
+    <div class="footer-box">
+      <h3 style="color: white;">Our Success Story</h3>
+      <img src="/images/team.png" alt="Success Image" class="footer-img">
+      <p>With over a decade of experience, Geocon Survey has successfully completed hundreds of projects, earning a reputation for precision, reliability, and professionalism across Kenya.</p>
+    </div>
+
+    <!-- Location Map -->
+    <div class="footer-box">
+      <h3 style="color: white;">Location Map</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.04455602901!2d35.2716502!3d0.5142771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aaa3d4df329b7%3A0x4e6c0a9eb4a9d5ed!2sEldoret%2C%20Kenya!5e0!3m2!1sen!2ske!4v1623671736178!5m2!1sen!2ske"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Info -->
+<div class="footer-box contact">
+  <h3 style="color: white;">Contacts</h3>
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>ELDORET-KENYA <br>
+        Ronald Ngala Street, <br>
+        E.T Centre <br>
+        Second floor-Room S06</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <span>info@geocon.co.ke</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-phone-alt"></i>
+    <span>+25415273556</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-mobile-alt"></i>
+    <span>+254 712 345 678</span>
+  </div>
+</div>
+
+
+  <div class="footer-bottom">
+    &copy; 2025 Geocon Survey. All Rights Reserved.
+  </div>
+</footer>
+
+
+  <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+
+<!---==BACK TO TOP BTN===-->
+<button id="scrollToTopBtn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+</body>
+</html>

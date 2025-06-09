@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Geocon Survey</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="geocon_favicon.jpg">
+  <link rel="stylesheet" href="home.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" onclick="toggleMenu()" style="z-index: 1000; color: blue;">
+      <i class="fas fa-bars" id="menuIcon"  style="color: blue; "></i>
+    </div>
+    <div class="logo">
+      <img src="geogon_logo.jpg" alt="Geocon Logo">
+    </div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="/services.html">Services  <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li class="has-dropdown">
+              <a href="#">Consultancy <i class="fas fa-chevron-left"></i></a>
+              <ul >
+                <li><a href="#">Engineering Consultancy</a></li>
+                <li><a href="#">Research Policy</a></li>
+                <li><a href="#">Environmental & Social Impact</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#">Survey <i class="fas fa-chevron-left"></i></a>
+              <ul>
+                <li><a href="/engineering_survey.html">Engineering Survey</a></li>
+                <li><a href="/land_survey.html">Land Survey</a></li>
+              </ul>
+            </li>
+            <li><a href="#">GIS and Mapping</a></li>
+            <li><a href="#">Physical Planning</a></li>
+          </ul>
+        </li>
+        <li  class="has-dropdown">
+          <a href="#">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul  class="dropdown">
+            <li><a href="#">Cadastral Planning</a></li>
+            <li><a href="#">Physical Planning</a></li>
+            <li><a href="#">GIS and Mapping</a></li>
+            <li><a href="#">Environmental & <br> Social Impact Assessment</a></li>
+            <li><a href="#">Other Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Slider Section -->
+  <div class="slider">
+    <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="slides" id="slideContainer">
+        <div class="slide">
+            <img src="survey1.jpg" alt="Survey Work 1">
+            <div class="slide-text">
+            <h2>Engineering Survey</h2>
+            <p>Precision land measurements for large-scale infrastructure.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="survey-img2.jpg" alt="Survey Work 2">
+            <div class="slide-text">
+            <h2>Land Surveying</h2>
+            <p>Boundary and title deed clarification for legal land use.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="survey-img3.jpg" alt="Survey Work 3">
+            <div class="slide-text">
+            <h2>GIS Mapping</h2>
+            <p>Digital mapping solutions for planning and development.</p>
+            </div>
+        </div>
+</div>
+
+    <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+  </div>
+
+
+  <!-- Intro Section
+  <section class="intro">
+    <h1>Professional Survey Engineering in Kenya</h1>
+    <p>Delivering accurate land measurement and mapping services using the latest technology for over 10 years.</p>
+  </section>
+ -->
+  <section class="sections">
+    <div class="vm-wrapper">
+        <div class="vm-container slide-left card" style="background-color: #4341c6;"> <!-- Vision Title -->
+        <h2>Vision</h2>
+        </div>
+        <div class="vm-container slide-right "> <!-- Vision Description -->
+            <p>To be a model of expertise, professionalism and delivery in Land and Engineering survey, GIS, Remote sensing and Planning across the country and beyond.</p>
+        </div>
+        <div class="vm-container slide-left card" style="background-color: #4341c6;"> <!-- Mission Title -->
+            <h2>Mission</h2>
+        </div>
+        <div class="vm-container slide-right"> <!-- Mission Description -->
+            <p>To give our clients solutions that are project tailored to suit their needs, with attention on quality product, professional management and sound advice.</p>
+        </div>
+</div>
+
+
+<!----==CARDS==-->
+    <div class="card slide-left">
+      <h3>Cadastral and Engineering Survey</h3>
+      <p>Geocon Ltd offers planning, sub-division, amendment of RIMs, preparation of deed plans among others. Engineering Survey is a component in this division.</p>
+    </div>
+    <div class="card slide-left">
+      <h3>GIS and Mapping</h3>
+      <p>We provide mapping services for our clients to collect and systematize location related data. From data acquisition, processing, analysis, and management, Geodev Kenya is able to provide comprehensive GIS & Mapping services.</p>
+    </div>
+    <div class="card slide-leftt">
+      <h3>Environmental and Social Impact Assessment and Audit</h3>
+      <p>We aim at determining and presenting the environmental impacts of a project, identifying their form, and realistic mitigation measures for the negative aspects while maximizing the positive ones.</p>
+    </div>
+    <div class="card slide-right">
+      <h3>Physical Planning</h3>
+      <p>Our physical planning methodology entails understanding the needs and aspirations of all the involved parties with the objective of solving urban and regional phenomena through providing sound practical solutions.</p>
+    </div>
+    <div class="card slide-right">
+      <h3>Aerial Photography</h3>
+      <p>We supply clear and accurate high-resolution aerial photographs and satellite images to help our clients to visualize, capture and analyze spatial data present in the images. Our team ensures that image products supplied meet the required standards.</p>
+    </div>
+    <div class="card slide-right">
+      <h3>Resettlement Action Plan (RAP)</h3>
+      <p>We prepare Resettlement Action Plans to guide and ensure proper resettlement and compensation of affected people and communities.</p>
+    </div>
+
+    <!------OUR CLIENTS SECTION-->
+    <div class="clients-inside">
+    <h2>Our Clients</h2>
+    <div class="client-slider">
+        <div class="logo-item card"><img src="images/GOK.png" alt="Client 1"></div>
+        <div class="logo-item card"><img src="images/moi.png" alt="Client 2"></div>
+        <div class="logo-item card"><img src="images/AEZ.png" alt="Client 3"></div>
+        <div class="logo-item card"><img src="images/CAS.jpg" alt="Client 4"></div>
+        <div class="logo-item card"><img src="images/ELDOWAS-tender-2021.webp" alt="Client 5"></div>
+        <div class="logo-item card"><img src="images/highlands.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/marsh.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/mediheal.jpg" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/open_arms.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/highlands.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/GOK.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/moi.png" alt="Client 6"></div>
+        <div class="logo-item card"><img src="images/ELDOWAS-tender-2021.webp" alt="Client 6"></div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <!--FOOTER SECTION-->
+  <footer class="custom-footer">
+  <div class="footer-wrapper">
+    <!-- Our Success Story -->
+    <div class="footer-box">
+      <h3 style="color: white;">Our Success Story</h3>
+      <img src="/images/team.png" alt="Success Image" class="footer-img">
+      <p>With over a decade of experience, Geocon Survey has successfully completed hundreds of projects, earning a reputation for precision, reliability, and professionalism across Kenya.</p>
+    </div>
+
+    <!-- Location Map -->
+    <div class="footer-box">
+      <h3 style="color: white;">Location Map</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.04455602901!2d35.2716502!3d0.5142771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aaa3d4df329b7%3A0x4e6c0a9eb4a9d5ed!2sEldoret%2C%20Kenya!5e0!3m2!1sen!2ske!4v1623671736178!5m2!1sen!2ske"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Info -->
+<div class="footer-box contact">
+  <h3 style="color: white;">Contacts</h3>
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>ELDORET-KENYA <br>
+        Ronald Ngala Street, <br>
+        E.T Centre <br>
+        Second floor-Room S06</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <span>info@geocon.co.ke</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-phone-alt"></i>
+    <span>+25415273556</span>
+  </div>
+  <br>
+  <div class="contact-item">
+    <i class="fas fa-mobile-alt"></i>
+    <span>+254 712 345 678</span>
+  </div>
+</div>
+
+
+  <div class="footer-bottom">
+    &copy; 2025 Geocon Survey. All Rights Reserved.
+  </div>
+</footer>
+
+
+  <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+
+<!---==BACK TO TOP BTN===-->
+<button id="scrollToTopBtn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

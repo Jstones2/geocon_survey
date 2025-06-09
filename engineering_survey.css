@@ -1,0 +1,57 @@
+.engineering-survey {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.engineering-survey .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1 1 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  flex: 1 1 45%;
+}
+
+.text-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.text-container p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .engineering-survey .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container, .image-container {
+    flex: 1 1 100%;
+  }
+  .image-container img {
+    height: auto;
+    max-width: 100%;
+  }
+}
